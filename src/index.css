@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 252 85% 63%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -96,6 +99,40 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-gmat-purple to-gmat-blue bg-clip-text text-transparent;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-gmat-purple to-gmat-blue;
+  }
+}
+
+.hero-pattern {
+  background-color: #ffffff;
+  background-image: radial-gradient(#6964DE 0.5px, #ffffff 0.5px);
+  background-size: 15px 15px;
+}
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #root {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }

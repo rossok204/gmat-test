@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { GraduationCap, Star, Users, Zap } from "lucide-react";
@@ -15,7 +14,7 @@ const Hero = () => {
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Your Personal <span className="gradient-text">AI Coach</span> for GMAT Success
+              Meet <span className="gradient-text">Dized</span>, Your AI GMAT Coach
             </h1>
             <p className="text-lg text-gray-600 mb-8 md:pr-12">
               Get customized 1-on-1 GMAT tutoring at a fraction of the cost of a human tutor. Achieve your target score with personalized study plans, adaptive practice, and real-time feedback.
@@ -23,7 +22,7 @@ const Hero = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Button className="gradient-bg hover:opacity-90 text-white py-6 px-8 text-lg">
-                Start Free Trial
+                Start 10-Day Free Trial
               </Button>
               <Button variant="outline" className="py-6 px-8 text-lg border-gmat-purple text-gmat-purple hover:bg-gmat-purple/10">
                 Learn More

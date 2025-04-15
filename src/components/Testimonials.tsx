@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Star } from "lucide-react";
 
@@ -96,12 +95,12 @@ const Testimonials = () => {
           <p className="text-gray-600 mb-8">
             Our students have been accepted into top MBA programs worldwide
           </p>
-          <div className="flex flex-wrap justify-center gap-8 opacity-60">
-            <div className="h-12 w-24 bg-gray-200 rounded flex items-center justify-center font-bold">HARVARD</div>
-            <div className="h-12 w-24 bg-gray-200 rounded flex items-center justify-center font-bold">STANFORD</div>
-            <div className="h-12 w-24 bg-gray-200 rounded flex items-center justify-center font-bold">WHARTON</div>
-            <div className="h-12 w-24 bg-gray-200 rounded flex items-center justify-center font-bold">INSEAD</div>
-            <div className="h-12 w-24 bg-gray-200 rounded flex items-center justify-center font-bold">MIT</div>
+          <div className="flex flex-wrap justify-center gap-8">
+            <img src="/harvard-logo.png" alt="Harvard Business School" className="h-12 object-contain grayscale hover:grayscale-0 transition-all" />
+            <img src="/stanford-logo.png" alt="Stanford GSB" className="h-12 object-contain grayscale hover:grayscale-0 transition-all" />
+            <img src="/wharton-logo.png" alt="Wharton" className="h-12 object-contain grayscale hover:grayscale-0 transition-all" />
+            <img src="/insead-logo.png" alt="INSEAD" className="h-12 object-contain grayscale hover:grayscale-0 transition-all" />
+            <img src="/mit-logo.png" alt="MIT Sloan" className="h-12 object-contain grayscale hover:grayscale-0 transition-all" />
           </div>
         </div>
       </div>

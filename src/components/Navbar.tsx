@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -15,7 +14,7 @@ const Navbar = () => {
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <a href="#" className="text-xl md:text-2xl font-bold gradient-text">
-            GMAT AI Coach
+            Dized
           </a>
         </div>
 
@@ -29,6 +28,9 @@ const Navbar = () => {
           </a>
           <a href="#testimonials" className="text-gray-700 hover:text-gmat-purple transition-colors">
             Testimonials
+          </a>
+          <a href="#blog" className="text-gray-700 hover:text-gmat-purple transition-colors">
+            Blog
           </a>
           <a href="#faq" className="text-gray-700 hover:text-gmat-purple transition-colors">
             FAQ
@@ -54,37 +56,12 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-lg p-4 z-50 animate-fade-in">
           <div className="flex flex-col space-y-4">
-            <a 
-              href="#features" 
-              className="text-gray-700 hover:text-gmat-purple p-2"
-              onClick={toggleMenu}
-            >
-              Features
-            </a>
-            <a 
-              href="#pricing" 
-              className="text-gray-700 hover:text-gmat-purple p-2"
-              onClick={toggleMenu}
-            >
-              Pricing
-            </a>
-            <a 
-              href="#testimonials" 
-              className="text-gray-700 hover:text-gmat-purple p-2"
-              onClick={toggleMenu}
-            >
-              Testimonials
-            </a>
-            <a 
-              href="#faq" 
-              className="text-gray-700 hover:text-gmat-purple p-2"
-              onClick={toggleMenu}
-            >
-              FAQ
-            </a>
-            <Button className="gradient-bg hover:opacity-90 w-full">
-              Get Started
-            </Button>
+            <a href="#features" className="text-gray-700 hover:text-gmat-purple p-2" onClick={toggleMenu}>Features</a>
+            <a href="#pricing" className="text-gray-700 hover:text-gmat-purple p-2" onClick={toggleMenu}>Pricing</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-gmat-purple p-2" onClick={toggleMenu}>Testimonials</a>
+            <a href="#blog" className="text-gray-700 hover:text-gmat-purple p-2" onClick={toggleMenu}>Blog</a>
+            <a href="#faq" className="text-gray-700 hover:text-gmat-purple p-2" onClick={toggleMenu}>FAQ</a>
+            <Button className="gradient-bg hover:opacity-90 w-full">Get Started</Button>
           </div>
         </div>
       )}
